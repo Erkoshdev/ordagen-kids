@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <div class="container">
+      <div class="header-row">
+        <a href="/" class="header-logo">
+          <img src="img/logo/logo.png" alt="">
+        </a>
+        <div class="mobile-menu">
+          <div class="header-nav-wrapper">
+            <div class="toggle-header-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header-nav">
+              <a href="#" class="header-nav-link">Государственным садам</a>
+              <a href="#" class="header-nav-link">Частным садам</a>
+              <a href="#" class="header-nav-link">Родителям</a>
+              <a href="#" class="header-nav-link">Открыть свой детский сад</a>
+            </div>
+          </div>
+          <div class="dropdown select-lang">
+            <button class="dropdown-toggle select-lang-btn" data-bs-toggle="dropdown">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9.5" cy="9.5" r="9" stroke="#032a31"/>
+                <path d="M14.5 9.5C14.5 12.0514 13.9002 14.3367 12.9564 15.967C12.005 17.6102 10.7652 18.5 9.5 18.5C8.23478 18.5 6.99497 17.6102 6.04363 15.967C5.09977 14.3367 4.5 12.0514 4.5 9.5C4.5 6.94863 5.09977 4.66329 6.04363 3.033C6.99497 1.38977 8.23478 0.5 9.5 0.5C10.7652 0.5 12.005 1.38977 12.9564 3.033C13.9002 4.66329 14.5 6.94863 14.5 9.5Z" stroke="#032a31"/>
+                <path d="M3 3C3 4.10457 5.91015 5 9.5 5C13.0899 5 16 4.10457 16 3" stroke="#032a31"/>
+                <path d="M3 16C3 14.8954 5.91015 14 9.5 14C13.0899 14 16 14.8954 16 16" stroke="#032a31"/>
+                <path d="M0.5 9.5H18.5" stroke="#032a31"/>
+                <path d="M9.5 1V18" stroke="#032a31"/>
+              </svg>
+              <span>KAZ</span>
+            </button>
+            <div class="dropdown-menu select-lang-menu">
+              <a class="select-lang-item" href="#">РУС</a>
+              <a class="select-lang-item" href="#">ENG</a>
+            </div>
+          </div>
+          <div class="header-tools">
+            <a href="#feedback" class="btn btn-green">Получить консультацию</a>
+            <a href="tel:+77783600003" class="phone-link">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.7966 15.1264V17.7514C19.7976 17.9951 19.7477 18.2363 19.6501 18.4596C19.5525 18.6829 19.4093 18.8833 19.2297 19.048C19.0501 19.2128 18.8381 19.3382 18.6073 19.4163C18.3764 19.4943 18.1318 19.5233 17.8891 19.5014C15.1966 19.2088 12.6103 18.2888 10.3379 16.8152C8.22373 15.4717 6.4313 13.6793 5.08788 11.5652C3.60911 9.28246 2.68885 6.68352 2.40163 3.9789C2.37977 3.73694 2.40852 3.49307 2.48607 3.26283C2.56362 3.03258 2.68826 2.82101 2.85205 2.64157C3.01585 2.46214 3.21521 2.31878 3.43745 2.22061C3.65969 2.12245 3.89993 2.07163 4.14288 2.0714H6.76788C7.19253 2.06723 7.6042 2.2176 7.92617 2.4945C8.24815 2.77139 8.45845 3.15592 8.51788 3.5764C8.62868 4.41646 8.83415 5.24129 9.13038 6.03515C9.24811 6.34834 9.27359 6.6887 9.2038 7.01592C9.13402 7.34314 8.97189 7.6435 8.73663 7.8814L7.62538 8.99265C8.87099 11.1833 10.6848 12.997 12.8754 14.2427L13.9866 13.1314C14.2245 12.8962 14.5249 12.734 14.8521 12.6642C15.1793 12.5945 15.5197 12.6199 15.8329 12.7377C16.6267 13.0339 17.4516 13.2394 18.2916 13.3502C18.7167 13.4101 19.1049 13.6242 19.3823 13.9517C19.6598 14.2792 19.8073 14.6973 19.7966 15.1264Z" stroke="#032A31" stroke-width="1.19737" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>7 (778) 360 00-03</span>
+            </a>
+          </div>
+        </div>
+        <div class="dropdown select-lang select-lang-sm">
+          <button class="dropdown-toggle select-lang-btn" data-bs-toggle="dropdown">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9.5" cy="9.5" r="9" stroke="#032a31"/>
+              <path d="M14.5 9.5C14.5 12.0514 13.9002 14.3367 12.9564 15.967C12.005 17.6102 10.7652 18.5 9.5 18.5C8.23478 18.5 6.99497 17.6102 6.04363 15.967C5.09977 14.3367 4.5 12.0514 4.5 9.5C4.5 6.94863 5.09977 4.66329 6.04363 3.033C6.99497 1.38977 8.23478 0.5 9.5 0.5C10.7652 0.5 12.005 1.38977 12.9564 3.033C13.9002 4.66329 14.5 6.94863 14.5 9.5Z" stroke="#032a31"/>
+              <path d="M3 3C3 4.10457 5.91015 5 9.5 5C13.0899 5 16 4.10457 16 3" stroke="#032a31"/>
+              <path d="M3 16C3 14.8954 5.91015 14 9.5 14C13.0899 14 16 14.8954 16 16" stroke="#032a31"/>
+              <path d="M0.5 9.5H18.5" stroke="#032a31"/>
+              <path d="M9.5 1V18" stroke="#032a31"/>
+            </svg>
+            <span>KAZ</span>
+          </button>
+          <div class="dropdown-menu select-lang-menu">
+            <a class="select-lang-item" href="#">РУС</a>
+            <a class="select-lang-item" href="#">ENG</a>
+          </div>
+        </div>
+        <button class="btn-plain toggle-mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="promo">
+      <div class="container">
+        <div class="promo-row">
+          <div class="promo-caption">
+            <h1>OrdagenKids — методическая поддержка для педагогов дошкольного образования</h1>
+            <h6>Откройте свой детский сад с уникальной технологией обучения и зарабатывайте от 2,5 млн в месяц</h6>
+            <a href="#feedback" class="btn btn-green">Получить консультацию</a>
+          </div>
+          <div class="promo-media">
+            <div class="swiper promo-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide promo-slide">
+                  <img src="img/main/promo-slide.png" />
+                </div>
+                <div class="swiper-slide promo-slide">
+                  <img src="img/main/health-img.png" />
+                </div>
+                <div class="swiper-slide promo-slide">
+                  <img src="img/main/community-img.png" />
+                </div>
+                <div class="swiper-slide promo-slide">
+                  <img src="img/main/variable-img.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev promo-slider-prev">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.48804" y="1.234" width="45.75" height="45.75" rx="22.875" stroke="#8CC04B" stroke-width="1.5"/>
+                <path d="M29.2446 32.7274C29.4624 32.9455 29.4624 33.2996 29.2446 33.5177C29.0269 33.7359 28.6734 33.7359 28.4557 33.5177L19.4807 24.5273C19.2629 24.3091 19.2629 23.9551 19.4807 23.7369L28.4557 14.7465C28.6734 14.5283 29.0269 14.5283 29.2446 14.7465C29.4624 14.9646 29.4624 15.3187 29.2446 15.5368L20.6641 24.1321L29.2446 32.7274Z" fill="#8CC04B"/>
+              </svg>
+            </div>
+            <div class="swiper-button-next promo-slider-next">
+              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="47.488" y="47.4091" width="45.75" height="45.75" rx="22.875" transform="rotate(-180 47.488 47.4091)" stroke="#8CC04B" stroke-width="1.5"/>
+                <path d="M19.7314 15.9157C19.5137 15.6975 19.5137 15.3435 19.7314 15.1254C19.9492 14.9072 20.3026 14.9072 20.5204 15.1254L29.4954 24.1158C29.7132 24.3339 29.7132 24.688 29.4954 24.9061L20.5204 33.8966C20.3026 34.1147 19.9492 34.1147 19.7314 33.8966C19.5137 33.6784 19.5137 33.3244 19.7314 33.1062L28.3119 24.511L19.7314 15.9157Z" fill="#8CC04B"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantage">
+      <div class="container">
+        <div class="section-title">
+          <b>Преимущества</b>
+        </div>
+        <div class="advantage-list">
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-knife"></i>
+            </span>
+            <p>Столовая</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-controller"></i>
+            </span>
+            <p>Развивающие занятия, игры и приключения на каждый день</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-file"></i>
+            </span>
+            <p>НПА</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-users"></i>
+            </span>
+            <p>Психологическая поддержка родителей</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-chart"></i>
+            </span>
+            <p>Годовой учебный план и Циклограмма</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-music"></i>
+            </span>
+            <p>Сборник мультфильмов и детской музыки</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-gear"></i>
+            </span>
+            <p>Система управления детскими садами</p>
+          </div>
+          <div class="advantage-item">
+            <span class="advantage-item-icon">
+              <i class="icon i-bulb"></i>
+            </span>
+            <p>Все решения апробированы на собственных садах</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="monitoring">
+      <div class="container">
+        <div class="section-title">
+          <b>Мониторинг развития ребенка</b>
+        </div>
+        <div class="monitoring-navigation">
+          <div class="monitoring-slider-prev">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.75" y="0.822876" width="45.75" height="45.75" rx="22.875" stroke="#11859A" stroke-width="1.5"/>
+              <path d="M28.5066 32.3163C28.7244 32.5344 28.7244 32.8884 28.5066 33.1066C28.2888 33.3247 27.9354 33.3247 27.7176 33.1066L18.7426 24.1161C18.5249 23.898 18.5249 23.544 18.7426 23.3258L27.7176 14.3354C27.9354 14.1172 28.2888 14.1172 28.5066 14.3354C28.7244 14.5535 28.7244 14.9075 28.5066 15.1257L19.9261 23.721L28.5066 32.3163Z" fill="#11859A"/>
+            </svg>
+          </div>
+          <div class="monitoring-slider-next">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="46.75" y="46.9979" width="45.75" height="45.75" rx="22.875" transform="rotate(-180 46.75 46.9979)" stroke="#11859A" stroke-width="1.5"/>
+              <path d="M18.9934 15.5045C18.7756 15.2864 18.7756 14.9324 18.9934 14.7142C19.2112 14.4961 19.5646 14.4961 19.7824 14.7142L28.7574 23.7047C28.9751 23.9228 28.9751 24.2768 28.7574 24.495L19.7824 33.4854C19.5646 33.7036 19.2112 33.7036 18.9934 33.4854C18.7756 33.2673 18.7756 32.9133 18.9934 32.6951L27.5739 24.0998L18.9934 15.5045Z" fill="#11859A"/>
+            </svg>
+          </div>
+        </div>
+        <div class="swiper monitoring-slider">
+          <div class="swiper-wrapper monitoring-list">
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/health-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #F6A632; height: 80px"></div>
+                <div class="monitoring-box-name">
+                  <p>Здоровье</p>
+                  <span>20%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Здоровье</p>
+                  <span>20%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/health-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/community-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #E64938; height: 201px"></div>
+                <div class="monitoring-box-name">
+                  <p>Коммуникация</p>
+                  <span>100%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Коммуникация</p>
+                  <span>100%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/community-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/creation-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #8CC04B; height: 165px"></div>
+                <div class="monitoring-box-name">
+                  <p>Творчество</p>
+                  <span>75%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Творчество</p>
+                  <span>75%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/creation-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/correction-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #11859A; height: 201px"></div>
+                <div class="monitoring-box-name">
+                  <p>Коррекционная деятельность</p>
+                  <span>100%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Коррекционная деятельность</p>
+                  <span>100%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/correction-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/variable-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #8CC04B; height: 164px"></div>
+                <div class="monitoring-box-name">
+                  <p>Вариативный компонент</p>
+                  <span>75%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Вариативный компонент</p>
+                  <span>75%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/variable-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/cognition-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #E64938; height: 184px"></div>
+                <div class="monitoring-box-name">
+                  <p>Познание</p>
+                  <span>80%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Познание</p>
+                  <span>80%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/cognition-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide monitoring-item">
+              <div class="monitoring-box">
+                <div class="monitoring-box-img">
+                  <img src="img/main/society-img.png" alt="">
+                </div>
+                <div class="monitoring-box-progress" style="background: #F6A632; height: 118px"></div>
+                <div class="monitoring-box-name">
+                  <p>Социум</p>
+                  <span>60%</span>
+                </div>
+              </div>
+              <div class="monitoring-tooltip">
+                <div class="monitoring-tooltip-name">
+                  <p>Социум</p>
+                  <span>60%</span>
+                </div>
+                <div class="monitoring-tooltip-img">
+                  <img src="img/main/society-img.png" alt="">
+                </div>
+                <ul class="monitoring-tooltip-list">
+                  <li>
+                    <div class="progress-bar" style="background: conic-gradient(#F6A632 75%, #fff 0)">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Умеет ходить, бегать, прыгать, лазать, и метать предметы</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Бросает и ловит мяч двумя руками</p>
+                  </li>
+                  <li>
+                    <div class="progress-bar">
+                      <div class="progress-bar-center"></div>
+                    </div>
+                    <p>Прыгает вперед, отталкиваясь двумя ногами</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="container">
+        <div class="section-title">
+          <b>Польза платформы</b>
+        </div>
+        <div class="nav benefits-tabs">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-gov">Для государственных садов</button>
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-private">Для частных садов</button>
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-director">Директорам</button>
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-parent">Родителям</button>
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-teacher">Педагогам</button>
+        </div>
+        <div class="tab-content benefits-tab-content">
+          <div class="tab-pane active" id="nav-gov">
+            <div class="benefits-content">
+              <ul class="benefits-list">
+                <li class="benefits-list-item">Витрина услуг детского сада (абонементы, доп. услуги)</li>
+                <li class="benefits-list-item">Расписание</li>
+                <li class="benefits-list-item">Посещаемость и заболеваемость</li>
+                <li class="benefits-list-item">Реестр заказов и счетов</li>
+                <li class="benefits-list-item">Статусы оплат</li>
+                <li class="benefits-list-item">Контроль общения между сотрудниками и клиентами</li>
+                <li class="benefits-list-item">Прогресс развития детей</li>
+                <li class="benefits-list-item">Гибкая фиксация питания</li>
+                <li class="benefits-list-item">Интеграции со СКУД или видеонаблюдением</li>
+                <li class="benefits-list-item">Разработка индивидуальных отчетов</li>
+              </ul>
+              <div class="benefits-img">
+                <img src="img/main/device-screen.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="nav-private">
+            <div class="benefits-content">
+              <ul class="benefits-list">
+                <li class="benefits-list-item">Витрина услуг детского сада (абонементы, доп. услуги)</li>
+                <li class="benefits-list-item">Расписание</li>
+                <li class="benefits-list-item">Посещаемость и заболеваемость</li>
+                <li class="benefits-list-item">Реестр заказов и счетов</li>
+                <li class="benefits-list-item">Статусы оплат</li>
+                <li class="benefits-list-item">Контроль общения между сотрудниками и клиентами</li>
+                <li class="benefits-list-item">Прогресс развития детей</li>
+              </ul>
+              <div class="benefits-img">
+                <img src="img/main/device-screen.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="nav-director">
+            <div class="benefits-content">
+              <ul class="benefits-list">
+                <li class="benefits-list-item">Витрина услуг детского сада (абонементы, доп. услуги)</li>
+                <li class="benefits-list-item">Расписание</li>
+                <li class="benefits-list-item">Посещаемость и заболеваемость</li>
+                <li class="benefits-list-item">Реестр заказов и счетов</li>
+                <li class="benefits-list-item">Статусы оплат</li>
+                <li class="benefits-list-item">Контроль общения между сотрудниками и клиентами</li>
+              </ul>
+              <div class="benefits-img">
+                <img src="img/main/device-screen.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="nav-parent">
+            <div class="benefits-content">
+              <ul class="benefits-list">
+                <li class="benefits-list-item">Реестр заказов и счетов</li>
+                <li class="benefits-list-item">Статусы оплат</li>
+                <li class="benefits-list-item">Контроль общения между сотрудниками и клиентами</li>
+                <li class="benefits-list-item">Прогресс развития детей</li>
+                <li class="benefits-list-item">Гибкая фиксация питания</li>
+                <li class="benefits-list-item">Интеграции со СКУД или видеонаблюдением</li>
+                <li class="benefits-list-item">Разработка индивидуальных отчетов</li>
+              </ul>
+              <div class="benefits-img">
+                <img src="img/main/device-screen.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="nav-teacher">
+            <div class="benefits-content">
+              <ul class="benefits-list">
+                <li class="benefits-list-item">Витрина услуг детского сада (абонементы, доп. услуги)</li>
+                <li class="benefits-list-item">Расписание</li>
+                <li class="benefits-list-item">Посещаемость и заболеваемость</li>
+                <li class="benefits-list-item">Реестр заказов и счетов</li>
+              </ul>
+              <div class="benefits-img">
+                <img src="img/main/device-screen.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="container">
+        <div class="section-title">
+          <b>Отзывы о платформе</b>
+        </div>
+        <div class="review-content">
+          <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review-card">
+                <div class="review-author">
+                  <div class="review-author-img">
+                    <i class="icon i-user"></i>
+                  </div>
+                  <div class="review-author-caption">
+                    <b>Мукият</b>
+                    <span>Город</span>
+                  </div>
+                </div>
+                <div class="review-card-content">
+                  <p>Опытные фирмы, которые уже прошли весь процесс становления, помогут избежать самых распространенных ошибок. Поэтому, при решении заняться частными детскими учреждениями, стоит обратить внимание на фирмы, которые предлагают договор франчайзинга в этой области.</p>
+                </div>
+              </div>
+              <div class="swiper-slide review-card">
+                <div class="review-author">
+                  <div class="review-author-img">
+                    <i class="icon i-user"></i>
+                  </div>
+                  <div class="review-author-caption">
+                    <b>Мукият</b>
+                    <span>Город</span>
+                  </div>
+                </div>
+                <div class="review-card-content">
+                  <p>Опытные фирмы, которые уже прошли весь процесс становления, помогут избежать самых распространенных ошибок.</p>
+                </div>
+              </div>
+              <div class="swiper-slide review-card">
+                <div class="review-author">
+                  <div class="review-author-img">
+                    <i class="icon i-user"></i>
+                  </div>
+                  <div class="review-author-caption">
+                    <b>Мукият</b>
+                    <span>Город</span>
+                  </div>
+                </div>
+                <div class="review-card-content">
+                  <p>Опытные фирмы, которые уже прошли весь процесс становления, помогут избежать самых распространенных ошибок. Поэтому, при решении заняться частными детскими учреждениями, стоит обратить внимание на фирмы, которые предлагают договор франчайзинга в этой области.</p>
+                </div>
+              </div>
+              <div class="swiper-slide review-card">
+                <div class="review-author">
+                  <div class="review-author-img">
+                    <i class="icon i-user"></i>
+                  </div>
+                  <div class="review-author-caption">
+                    <b>Мукият</b>
+                    <span>Город</span>
+                  </div>
+                </div>
+                <div class="review-card-content">
+                  <p>Опытные фирмы, которые уже прошли весь процесс становления, помогут избежать самых распространенных ошибок.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination review-pagination"></div>
+          <div class="swiper-button-prev review-slider-prev">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.903271" y="0.7729" width="46.4625" height="46.4625" rx="23.2312" stroke="#11859A" stroke-width="0.7875"/>
+              <path d="M29.0161 32.6225C29.2339 32.8407 29.2339 33.1947 29.0161 33.4129C28.7983 33.631 28.4449 33.631 28.2271 33.4129L19.2522 24.4224C19.0344 24.2043 19.0344 23.8502 19.2522 23.6321L28.2271 14.6416C28.4449 14.4235 28.7983 14.4235 29.0161 14.6416C29.2339 14.8598 29.2339 15.2138 29.0161 15.432L20.4356 24.0272L29.0161 32.6225Z" fill="#11859A"/>
+            </svg>
+          </div>
+          <div class="swiper-button-next review-slider-next">
+            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="47.4771" y="47.6604" width="46.4625" height="46.4625" rx="23.2312" transform="rotate(-180 47.4771 47.6604)" stroke="#11859A" stroke-width="0.7875"/>
+              <path d="M19.3643 15.8108C19.1465 15.5927 19.1465 15.2386 19.3643 15.0205C19.582 14.8023 19.9355 14.8023 20.1532 15.0205L29.1282 24.0109C29.346 24.2291 29.346 24.5831 29.1282 24.8013L20.1532 33.7917C19.9355 34.0099 19.582 34.0099 19.3643 33.7917C19.1465 33.5736 19.1465 33.2195 19.3643 33.0014L27.9448 24.4061L19.3643 15.8108Z" fill="#11859A"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="feedback" id="feedback">
+      <div class="container">
+        <div class="section-title">
+          <b>Как получить доступ к платформе?</b>
+          <p>Заполните форму и получите бесплатную консультацию</p>
+        </div>
+        <div class="feedback-form">
+          <div class="feedback-form-row">
+            <div class="input-form">
+              <input type="text" placeholder="Ваше имя">
+            </div>
+            <div class="input-form">
+              <input type="text" class="phone-mask" placeholder="Телефон">
+            </div>
+            <div class="input-form">
+              <input type="email" placeholder="Почта">
+            </div>
+          </div>
+          <div class="agreement">
+            <input type="checkbox">
+            <div class="agreement-checkmark"></div>
+            <p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
+          </div>
+          <button class="btn btn-red">Получить консультацию</button>
+        </div>
+        <div class="feedback-img">
+          <img src="img/main/feedback-img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="container">
+        <div class="section-title">
+          <b>Частые вопросы</b>
+        </div>
+        <div class="faq-list" id="faq">
+          <div class="faq-item">
+            <div class="faq-item-head" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Что такое Ordagen?
+            </div>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="faq-item-body">
+                OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-head" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Что такое Ordagen?
+            </div>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="faq-item-body">
+                OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-head" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Что такое Ordagen?
+            </div>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="faq-item-body">
+                OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-head" data-bs-toggle="collapse" data-bs-target="#faq4">
+              Что такое Ordagen?
+            </div>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="faq-item-body">
+                OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования. OrdagenKids — методическая поддержка для педагогов дошкольного образования.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <div class="section-title">
+          <b>Контакты и обратная связь</b>
+        </div>
+        <div class="contact-row">
+          <div class="contact-list">
+            <div class="contact-item">
+              <b>Адрес:</b>
+              <p>улица Амангельды Иманова 20, Астана 010000, Казахстан</p>
+            </div>
+            <div class="contact-item">
+              <b>Контакты:</b>
+              <a href="tel:+77777777777">Телефон: +7 (777) 777 77-77</a>
+              <a href="mailto:mail@gmail.com">Электронная почта: mail@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-feedback">
+            <b>Получите коммерческое предложение</b>
+            <div class="contact-feedback-row">
+              <div class="input-form">
+                <input type="text" placeholder="Ваше имя">
+              </div>
+              <div class="input-form">
+                <input type="text" class="phone-mask" placeholder="Телефон">
+              </div>
+              <div class="input-form">
+                <input type="email" placeholder="Почта">
+              </div>
+              <div class="agreement">
+                <input type="checkbox">
+                <div class="agreement-checkmark"></div>
+                <p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
+              </div>
+            </div>
+            <button class="btn btn-red">Получить консультацию</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <a href="/" class="footer-logo">
+          <img src="img/logo/logo.png" alt="">
+        </a>
+        <div class="footer-nav">
+          <a href="#" class="footer-nav-link">Государственным садам</a>
+          <a href="#" class="footer-nav-link">Частным садам</a>
+          <a href="#" class="footer-nav-link">Родителям</a>
+        </div>
+        <a href="#" class="text-link privacy-policy">Политика конфиденциальности</a>
+        <a href="#" class="text-link personal-data">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
