@@ -1,6 +1,13 @@
 //desktops
 @media (min-width: 1200px) and  (max-width: 1399px) {
-
+  .promo-slider {
+    height: 450px;
+    width: 450px;
+    border-width: 40px;
+  }
+  .rate-card {
+    padding: 30px;
+  }
 }
 
 //desktops
@@ -70,8 +77,11 @@
     height: 380px;
     border-width: 35px;
   }
+  .promo-caption {
+    padding-right: 40px;
+  }
   .promo-caption h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   .advantage-item p {
     font-size: 16px;
@@ -117,10 +127,23 @@
     width: 620px;
     padding-right: 44px;
   }
+  .rate-card {
+    padding: 30px;
+  }
+  .rate-list {
+    padding: 0;
+  }
 }
 
 //tablets
 @media (min-width: 768px) and (max-width: 991px) {
+  .main-slider {
+    padding: 0;
+  }
+  .promo {
+    height: initial;
+    min-height: 475px;
+  }
   .mobile-menu {
     margin-left: 0;
   }
@@ -288,6 +311,34 @@
     padding-right: 44px;
     margin-top: 30px;
   }
+  .rate-list {
+    padding: 0;
+    gap: 20px;
+  }
+  .rate-card {
+    padding: 30px 20px;
+  }
+  .rate-card-title {
+    font-size: 24px;
+  }
+  .price-card-price {
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 15px;
+  }
+  .price-card-subtitle {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .rate-card-items li {
+    padding-left: 16px;
+    font-size: 17px;
+    line-height: 110%;
+  }
+  .rate-card-items li:before {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 //phones
@@ -406,6 +457,9 @@
     position: relative;
     z-index: 12;
   }
+  .main-slider {
+    padding: 0;
+  }
   .promo {
     padding: 120px 0 40px;
     max-height: initial;
@@ -418,6 +472,7 @@
   }
   .promo-caption {
     padding-right: 0;
+    transform: translateX(0) translateY(-20px);
   }
   .promo-caption h1 {
     font-size: 24px;
@@ -430,8 +485,8 @@
     margin-top: 31px;
   }
   .promo-media {
-    margin-top: 36px;
     padding-top: 55px;
+    transform: translateX(0) translateY(20px);
   }
   .promo-slider {
     width: 330px;
@@ -439,14 +494,8 @@
     border-width: 30px;
   }
   .promo-slider-prev, .promo-slider-next {
-    top: 0;
-    margin: 0;
-  }
-  .promo-slider-prev {
-    left: 0;
-  }
-  .promo-slider-next {
-    right: 0;
+    top: initial;
+    bottom: 315px;
   }
   .advantage {
     margin-top: 20px;
@@ -663,8 +712,45 @@
   .contact-feedback .btn-red {
     width: 100%;
   }
-
-
+  .rate-list {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    gap: 24px;
+    padding: 0;
+  }
+  .rate-list::-webkit-scrollbar {
+    display: none;
+  }
+  .rate-card {
+    padding: 30px 20px;
+    width: 300px;
+    flex-shrink: 0;
+  }
+  .rate-card-title {
+    font-size: 24px;
+  }
+  .price-card-price {
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 15px;
+  }
+  .price-card-subtitle {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .rate-card-items li {
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .rate-card-items li:before {
+    width: 10px;
+    height: 10px;
+  }
+  .rates {
+    margin-top: 45px;
+  }
 }
 
 //additional

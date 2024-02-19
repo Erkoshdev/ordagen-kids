@@ -1,11 +1,21 @@
 //promo slider
-const promoSlider = new Swiper(".promo-slider", {
+const promoSlider = new Swiper(".main-slider", {
   slidesPerView: 1,
   loop: true,
+  speed: 900,
+  spaceBetween: 100,
   navigation: {
     nextEl: ".promo-slider-next",
     prevEl: ".promo-slider-prev",
   },
+  breakpoints: {
+    320: {
+      autoHeight: true,
+    },
+    767: {
+      autoHeight: false,
+    }
+  }
 });
 
 
